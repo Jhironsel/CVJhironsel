@@ -4,87 +4,104 @@
     <div class="w3-third">
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
-          <img src="assets/image/Jhironsel.jpg" style="width:100%" alt="Avatar">
+          <img src="assets/image/Jhironsel.jpg" style="width:100%; transform:rotate(5deg)" alt="Avatar">
           <div class="w3-container w3-text-white w3-teal">
-            <h2 style="display: inline;">{{name}} <img src="assets/image/bandera.webp" style="width:32px;" alt="Bendera dominicana"></h2>
+            <h2 style="display: inline;">{{name}} <img src="assets/image/bandera.webp" style="width:32px;"
+                alt="Bendera dominicana"></h2>
 
           </div>
         </div>
         <div class="w3-container">
-          <i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>
+          <p class="w3-large">
+            <b>
+              <i class="fa fa-address-card fa-fw w3-margin-right w3-text-teal"></i>
+              Datos personales.
+            </b>
+          </p>
+          <i class="fa fa-gavel fa-fw w3-margin-right w3-large w3-text-teal"></i>
           Licenciado en Informática.
           <div class="w3-container">
             <div class="w3-container ">
               <div class="w3-container ">
-                Título Universitario: <a href="https://estuasdedu-my.sharepoint.com/:b:/g/personal/ch5760_est_uasd_edu_do/Eaeqoo7KPS9Fq8ars3WGTlMB6Pw4BuZs2JnREda3XdnjSw?e=Dfzcig" target="_blank" rel="noopener noreferrer">Enlace</a>
+                Título Universitario: <a href={{tituloUniversitario}} target="_blank"
+                  rel="noopener noreferrer">Enlace</a>
                 <br>
                 Maestría en Auditoria Y Seguridad Informática: <span class="w3-tag w3-teal w3-round">Actual</span>
                 <br>
-                Cod. Colegio: <a href="https://cdpic.org.do/home/colegiados-activos/" target="_blank" rel="noopener noreferrer">C650</a>
+                Cod. Colegio: <a href={{cdpic}} target="_blank" rel="noopener noreferrer">C650</a>
               </div>
             </div>
-
           </div>
 
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>
-              Programador freelance.
+            Programador freelance.
           </p>
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>
-              Profesor de Informática.
+            Profesor de Informática.
           </p>
           <p><i class="fa fa-calendar fa-fw w3-margin-right w3-large w3-text-teal"></i> 07 Abril 1984</p>
+
+          <hr>
+          <p class="w3-large">
+            <b>
+              <i class="fa fa-address-card fa-fw w3-margin-right w3-text-teal"></i>
+              Direcciones.
+            </b>
+          </p>
           <i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>
-            San Juan, Republica Dominicana
-          <br>
-          <div class="w3-container">
-            <div class="w3-container">
-              <div class="w3-container">
-                <p>
-                  Avenida Circunvalación Sur Edificio: 40 Apartamento: 102 Cristo Rey,
-                  <a href="https://goo.gl/maps/jHswwqiJh3E9UZZg9" target="_blank" rel="noopener noreferrer">San Juan de la Maguana.</a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-
-          <i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>
-            Santo Domingo, Republica Dominicana
+          Santo Domingo Este
           <br>
           <div class="w3-container">
             <div class="w3-container">
               <div class="w3-container">
                 <p>
                   Calle Coralillos, Residencial Coral I, A2, Autopista las América Con
-                  Charles de Gaulle, <a href="https://goo.gl/maps/pxU4184YpVMR1U5F9" target="_blank" rel="noopener noreferrer">Los Corales Santo Domingo .</a>
+                  Charles de Gaulle, <a href={{hogar2}} target="_blank" rel="noopener noreferrer">Los Corales Santo
+                    Domingo Este.</a>
                 </p>
               </div>
             </div>
           </div>
 
           <i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>
-          Santiago de los Caballeros, Republica Dominicana
-        <br>
-        <div class="w3-container">
+          San Juan de la Maguana
+          <br>
           <div class="w3-container">
             <div class="w3-container">
-              <p>
-                Urbanización Don Jaime, calle 10 casa #21
-              </p>
+              <div class="w3-container">
+                <p>
+                  Avenida Circunvalación Sur Edificio: 40 Apartamento: 102 Cristo Rey,
+                  <a href={{hogar}} target="_blank" rel="noopener noreferrer">San Juan de la Maguana.</a>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
+          <i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>
+          Santiago de los Caballeros
+          <br>
+          <div class="w3-container">
+            <div class="w3-container">
+              <div class="w3-container">
+                <p>
+                  Urbanización Don Jaime, calle 10 casa #21
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <p class="w3-large">
+            <b>
+              <i class="fa fa-address-card fa-fw w3-margin-right w3-text-teal"></i>
+              Contactos.
+            </b>
+          </p>
           <p>
             <a href="mailto:{{email}}">
               <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>
               {{email.trim()}}
-            </a>
-          </p>
-          <p>
+            </a> ,
             <a href="mailto:{{email2}}">
-              <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>
               {{email2.trim()}}
             </a>
           </p>
@@ -93,14 +110,40 @@
             <a href="tel:+1{{tel}}">
               <i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>
               {{tel}}
-            </a>
-          </p>
-          <p>
-            <a href="tel:+1{{tel2}}">
-              <i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>
+            </a> , <a href="tel:+1{{tel2}}">
               {{tel2}}
             </a>
           </p>
+
+          <hr>
+          <p class="w3-large">
+            <b>
+              <i class="fa fa-users fa-fw w3-margin-right w3-text-teal"></i>
+              Redes sociales y repositorios.
+            </b>
+          </p>
+          <p>
+            <a href="{{github}}">
+              <i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i>
+              @Jhironsel
+            </a> , <a href="{{bitbutcket}}">
+              <i class="fa fa-bitbucket fa-fw w3-margin-right w3-large w3-text-teal"></i>
+              @Jhironsel
+            </a> , <a href="{{facebook}}">
+              <i class="fa fa-facebook fa-fw w3-margin-right w3-large w3-text-teal"></i>
+              @Jhironsel
+            </a>
+          </p>
+          <p>
+            <a href="{{linkedin}}">
+              <i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-teal"></i>
+              @Jhironsel
+            </a> , <a href="{{youtube}}">
+              <i class="fa fa-youtube fa-fw w3-margin-right w3-large w3-text-teal"></i>
+              @Jhironsel
+            </a>
+          </p>
+
           <hr>
 
           <p class="w3-large">
@@ -175,7 +218,7 @@
 
           <p>English</p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+            <div class="w3-round-xlarge w3-teal w3-center" style="height:24px;width:60%">60%</div>
           </div>
           <br>
 
@@ -190,7 +233,8 @@
         </h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Programador y Reparación de Computadoras (FreeLancer)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Actual</span></h6>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span
+              class="w3-tag w3-teal w3-round">Actual</span></h6>
           <p>
             Desarrollador de aplicaciones en Java (SoftSureña), Gestionando y Administrando
             la aplicación de facturación. Actualmente.
@@ -209,8 +253,7 @@
           <p>
             Formador del Técnico de Informática en el Centro Cristiano de Educación para el
             Desarrollo (CCED).
-            <a href="https://estuasdedu-my.sharepoint.com/:b:/g/personal/ch5760_est_uasd_edu_do/EftqRCwtnStGj7Bv_mOxNV8BN_TBV7jZqdlgS-jhTFQPuA?e=7hfOwZ"
-              target="_blank" rel="noopener noreferrer">Carta de trabajo
+            <a href={{cartaLaboral}} target="_blank" rel="noopener noreferrer">Carta de trabajo
             </a>
           </p>
           <hr>
@@ -260,10 +303,10 @@
             <i class="fa fa-calendar fa-fw w3-margin-right"></i>2003 - 2004
           </h5> -->
           Liceo Pedro Henríquez Ureña
-            <ol>
-              <li><a href="https://estuasdedu-my.sharepoint.com/:b:/g/personal/ch5760_est_uasd_edu_do/Ee9bIj_xnJNDvQuKluhOceIBoG-DcwoALWmApU-OKVR2dw?e=m1kjVc" target="_blank" rel="noopener noreferrer">Certificación</a></li>
-              <li><a href="https://estuasdedu-my.sharepoint.com/:b:/g/personal/ch5760_est_uasd_edu_do/Ed_wCRPVmOZEuJcnMlkApyUBiMHLDRug45686UAK-6hClQ?e=qM0Mep" target="_blank" rel="noopener noreferrer">Diploma</a></li>
-            </ol>
+          <ol>
+            <li><a href={{certificado}} target="_blank" rel="noopener noreferrer">Certificación</a></li>
+            <li><a href={{diploma}} target="_blank" rel="noopener noreferrer">Diploma</a></li>
+          </ol>
           <hr>
         </div>
 
@@ -272,34 +315,37 @@
           <!-- <h5 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012</h5> -->
           <ol>
             <li>Manejador de Microsoft Power Point
-                <a href="http://servicios.infotep.gob.do/Certificados/ValidacionCertificado.aspx?id=AAAfxZAALAAAoP4AAD&val=1" target="_blank" rel="noopener noreferrer">Enlace</a>
+              <a href={{powerPoint}} target="_blank" rel="noopener noreferrer">Enlace</a>
             </li>
             <li>Manejador de Internet
-                <a href="http://servicios.infotep.gob.do/Certificados/ValidacionCertificado.aspx?id=AAAfxZAAKAAAr5RAAH&val=1" target="_blank" rel="noopener noreferrer">Enlace</a>
+              <a href={{manejadorInternet}} target="_blank" rel="noopener noreferrer">Enlace</a>
             </li>
             <li>Manejador de Microsoft Excell Básico
-                <a href="http://servicios.infotep.gob.do/Certificados/ValidacionCertificado.aspx?id=AAAfxZAAKAAAuBiAAP&val=1" target="_blank" rel="noopener noreferrer">Enlace</a>
+              <a href={{manejadorExcellBasico}} target="_blank" rel="noopener noreferrer">Enlace</a>
             </li>
             <li>Manejador de Microsoft Excell Intermedio
-                <a href="http://servicios.infotep.gob.do/Certificados/ValidacionCertificado.aspx?id=AAAfxZAAEAAAsgUAAl&val=1" target="_blank" rel="noopener noreferrer">Enlace</a>
+              <a href={{manejadorExcellIntermedio}} target="_blank" rel="noopener noreferrer">Enlace</a>
             </li>
             <li>Microsoft Excell Avanzado
-                <a href="http://servicios.infotep.gob.do/Certificados/ValidacionCertificado.aspx?id=AAAfxZAALAAAp5wAAj&val=1" target="_blank" rel="noopener noreferrer">Enlace</a>
+              <a href={{manejadorExcellAvanzado}} target="_blank" rel="noopener noreferrer">Enlace</a>
             </li>
             <li>Programación en PHP
-                <a href="http://servicios.infotep.gob.do/Certificados/ValidacionCertificado.aspx?id=AAAfxZAANAAAtFCAAe&val=1" target="_blank" rel="noopener noreferrer">Enlace</a>
+              <a href={{php}} target="_blank" rel="noopener noreferrer">Enlace</a>
             </li>
             <li>Estrategias De Evaluación
-                <a href="http://servicios.infotep.gob.do/Certificados/ValidacionCertificado.aspx?id=AAAfxZAAKAAArzrAAT&val=1" target="_blank" rel="noopener noreferrer">Enlace</a>
+              <a href={{estrategiaEvaluacion}} target="_blank" rel="noopener noreferrer">Enlace</a>
             </li>
             <li>Desarrollador de aplicaciones en las nubes (Freelancer)
-                <a href="http://servicios.infotep.gob.do/Certificados/ValidacionCertificado.aspx?id=AAAfxZAANAAEecGAAQ&val=1" target="_blank" rel="noopener noreferrer">Enlace</a>
+              <a href={{desarrolloNube}} target="_blank" rel="noopener noreferrer">Enlace</a>
             </li>
             <li>Herramientas de Google para la Formación Virtual
-                <a href="http://servicios.infotep.gob.do/Certificados/ValidacionCertificado.aspx?id=AAAfxZAANAAEefMAAg&val=1" target="_blank" rel="noopener noreferrer">Enlace</a>
+              <a href={{googleFormacionVirtual}} target="_blank" rel="noopener noreferrer">Enlace</a>
             </li>
             <li>Facilitador de la Formación Profesional
-                <a href="http://servicios.infotep.gob.do/Certificados/ValidacionCertificado.aspx?id=AAAfxZAANAAEfJEAAk&val=1" target="_blank" rel="noopener noreferrer">Enlace</a>
+              <a href={{facilitador}} target="_blank" rel="noopener noreferrer">Enlace</a>
+            </li>
+            <li>Auxiliar en Ciber Seguridad
+              <a href={{ciberSeguridad}} target="_blank" rel="noopener noreferrer">Enlace</a>
             </li>
           </ol>
           <hr>
@@ -310,13 +356,13 @@
           <!-- <h5 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013</h5> -->
           <ol>
             <li>Tec. En Caja Banca y Comercial
-                <a href="https://estuasdedu-my.sharepoint.com/:b:/g/personal/ch5760_est_uasd_edu_do/EYyK1J2LLl9DqBK05q3hfHIBW7hwpNLnsPwuCCvix5WYEg?e=eC9SlA" target="_blank" rel="noopener noreferrer">Enlace</a>
+              <a href={{bancaComercial}} target="_blank" rel="noopener noreferrer">Enlace</a>
             </li>
             <li>Tec. En Caja Banca y Comercial Ilustre
-                <a href="https://estuasdedu-my.sharepoint.com/:b:/g/personal/ch5760_est_uasd_edu_do/EWme5xEkJx9NhbwClhMbiZ8BdWNBjgWRWr_MeiT0Jun9cw?e=9xdKLU" target="_blank" rel="noopener noreferrer">Enlace</a>
+              <a href={{bancaComercialIlustre}} target="_blank" rel="noopener noreferrer">Enlace</a>
             </li>
             <li>Tec. En Contabilidad
-                <a href="https://estuasdedu-my.sharepoint.com/:b:/g/personal/ch5760_est_uasd_edu_do/EbzOnN087t5KjRz-tQrxfJQBDRN-YyLrs3URM_kc5riYjQ?e=3Ca9BW" target="_blank" rel="noopener noreferrer">Enlace</a>
+              <a href={{contabilidad}} target="_blank" rel="noopener noreferrer">Enlace</a>
             </li>
           </ol>
           <hr>
@@ -325,36 +371,39 @@
         <div class="w3-container">
           <h4 class="w3-opacity"><b>Ministerio De Educación Superior, Ciencia Y Tec.</b></h4>
           <!-- <h5 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016</h5> -->
-            <ol>
-              <li>Programa de Ingles por Inmersión
-                <a href="https://estuasdedu-my.sharepoint.com/:b:/g/personal/ch5760_est_uasd_edu_do/EdIz1N0sMhNMqIuA12SWJjcB8QpjIz1LyeMaWj2UO1P4Vg?e=pIaslu" target="_blank" rel="noopener noreferrer">Enlace</a>
-              </li>
-              <li>Ciber Seguridad
-                <a href="https://estuasdedu-my.sharepoint.com/personal/ch5760_est_uasd_edu_do/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fch5760%5Fest%5Fuasd%5Fedu%5Fdo%2FDocuments%2FDocumento%2FCVJhironselDiaz%2FLijero%2FCertificado%20Inform%C3%A1tica%2FCiberSeguridad%2Epdf&parent=%2Fpersonal%2Fch5760%5Fest%5Fuasd%5Fedu%5Fdo%2FDocuments%2FDocumento%2FCVJhironselDiaz%2FLijero%2FCertificado%20Inform%C3%A1tica&ga=1" target="_blank" rel="noopener noreferrer">Enlace</a>
-              </li>
-              <li>Administración y Diseño de Bases de Datos en SQL Server
-                <a href="https://estuasdedu-my.sharepoint.com/personal/ch5760_est_uasd_edu_do/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fch5760%5Fest%5Fuasd%5Fedu%5Fdo%2FDocuments%2FDocumento%2FCVJhironselDiaz%2FLijero%2FCertificado%20Inform%C3%A1tica%2FAdministraci%C3%B3n%20y%20Dise%C3%B1o%20de%20Base%20de%20Datos%20en%20SQL%20Server%2Epdf&parent=%2Fpersonal%2Fch5760%5Fest%5Fuasd%5Fedu%5Fdo%2FDocuments%2FDocumento%2FCVJhironselDiaz%2FLijero%2FCertificado%20Inform%C3%A1tica&ga=1" target="_blank" rel="noopener noreferrer">Enlace</a>
-              </li>
-            </ol>
+          <ol>
+            <li>Programa de Ingles por Inmersión
+              <a href={{inglesInmersion}} target="_blank" rel="noopener noreferrer">Enlace</a>
+            </li>
+            <li>Ciber Seguridad
+              <a href={{ciberSeguridadMESCYT}} target="_blank" rel="noopener noreferrer">Enlace</a>
+            </li>
+            <li>Administración y Diseño de Bases de Datos en SQL Server
+              <a href={{SQLServer}} target="_blank" rel="noopener noreferrer">Enlace</a>
+            </li>
+          </ol>
           <hr>
         </div>
         <div class="w3-container">
           <h4 class="w3-opacity"><b>Capacítate Para El Empleo, Fundación Carlos Slim.</b></h4>
           <!-- <h5 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017</h5> -->
-            <ol>
-              <li>Técnico en redes de datos
-                <a href="https://capacitateparaelempleo.org/verifica/gkk0e5bin/" target="_blank" rel="noopener noreferrer">Enlace</a>
-              </li>
-              <li>Técnico en la instalación y reparación de equipo de cómputo
-                <a href="https://capacitateparaelempleo.org/verifica/uf539mw8p/" target="_blank" rel="noopener noreferrer">Enlace</a>
-              </li>
-              <li>Instalador de cables de cobre
-                <a href="https://capacitateparaelempleo.org/verifica/x9hxggfdh/" target="_blank" rel="noopener noreferrer">Enlace</a>
-              </li>
-              <li>Asistente web
-                <a href="https://capacitateparaelempleo.org/verifica/forcpiir3/" target="_blank" rel="noopener noreferrer">Enlace</a>
-              </li>
-            </ol>
+          <ol>
+            <li>Técnico en redes de datos
+              <a href={{tecnicoRedes}} target="_blank" rel="noopener noreferrer">Enlace</a>
+            </li>
+            <li>Instalador de cables de cobre
+              <a href={{cobre}} target="_blank" rel="noopener noreferrer">Enlace</a>
+            </li>
+            <li>Asistente web
+              <a href={{asistenteWeb}} target="_blank" rel="noopener noreferrer"> Enlace </a>
+            </li>
+            <li>Técnico en seguridad informática (análisis de riesgos)
+              <a href={{seguridadInformatica}} target="_blank" rel="noopener noreferrer"> Enlace </a>
+            </li>
+            <li>Introducción a la programación
+              <a href={{introduccionProgramacion}} target="_blank" rel="noopener noreferrer"> Enlace </a>
+            </li>
+          </ol>
           <hr>
         </div>
         <div class="w3-container">
@@ -362,7 +411,8 @@
           <!-- <h5 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017</h5> -->
           <div class="w3-container">
             <p>Curso Básico De Soporte Técnico.
-              <a href="https://estuasdedu-my.sharepoint.com/:b:/g/personal/ch5760_est_uasd_edu_do/Eee-MRwuktZDujc-wzY2KS0BOR0-zm6qBWA9xJ9qR7ZY-A?e=0DXtIM" target="_blank" rel="noopener noreferrer">Enlace</a>
+              <a href={{soporteTecnico}}
+                target="_blank" rel="noopener noreferrer">Enlace</a>
             </p>
           </div>
           <hr>
@@ -372,7 +422,7 @@
           <!-- <h5 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019</h5> -->
           <div class="w3-container">
             <p>Actívate en JAVA Ed.II
-              <a href="https://estuasdedu-my.sharepoint.com/personal/ch5760_est_uasd_edu_do/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fch5760%5Fest%5Fuasd%5Fedu%5Fdo%2FDocuments%2FDocumento%2FCVJhironselDiaz%2FLijero%2FCertificado%20Inform%C3%A1tica%2FCertificado%20de%20Java%20EQI2%2Epdf&parent=%2Fpersonal%2Fch5760%5Fest%5Fuasd%5Fedu%5Fdo%2FDocuments%2FDocumento%2FCVJhironselDiaz%2FLijero%2FCertificado%20Inform%C3%A1tica&ga=1" target="_blank" rel="noopener noreferrer">Enlace</a>
+              <a href = {{javaActivate}}   target="_blank" rel="noopener noreferrer">Enlace</a>
             </p>
           </div>
           <hr>
